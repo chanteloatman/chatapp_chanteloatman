@@ -1,0 +1,25 @@
+{
+  "name": "chatapp_chanteloatman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "grunt": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chanteloatman/chatapp_chanteloatman.git"
+  },
+  "keywords": [],
+  "author": "chanteloatman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chanteloatman/chatapp_chanteloatman/issues"
+  },
+  "homepage": "https://github.com/chanteloatman/chatapp_chanteloatman"
+}
