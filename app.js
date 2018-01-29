@@ -1,17 +1,32 @@
 
-const express = requireonce('express'); //just like an include or reqire with ...
+const express = require('express'); //just like an include or reqire with ...
 const app = express(); //create an instance of our application via simpleExample
+const io = require('socket.io')();
+
 
 app.use(express.static('public'));
 
-//set up route
-app.use(require('./routes/index'));
-app.use(require('./routes/contact'));
-app.use(require('./routes/users'));
+//set up routes
+app.use(require('./route/index'));
+app.use(require('./route/contact'));
+app.use(require('./route/users'));
 
-app.listen(3000, () => {
+const server = app.listen(3000, () => {
   console.log('listening on port 3000!');
 });
+
+io.attach(server);
+
+io.on('connection', (socket) => {
+  console.log('a user has connected!');
+  io.emit('connectMsg', { for: 'everyone', msg : `${socket.id} is here`});
+
+socket.on('disconnect', () => {
+  console.log('a user has disconnected!');
+});
+
+});
+
 
 
 /*const express = require('express');
