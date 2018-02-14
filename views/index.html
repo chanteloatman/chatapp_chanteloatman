@@ -3,18 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title>chatapp_chanteloatman</title>
-	<link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="../public/css/main.css">
+	<link rel="stylesheet" href="../sass/main.scss">
+	<link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
 </head>
 <body>
-  <h1>Chantel Oatman Chat App</h1>
+  <h1 class="hidden">The Chantel Oatman Chat App</h1>
+	  <h2 id="mainTitle">The Flashback Chat Room</h2>
 
-	<input type="text" class="nickname" placeholder="What is your nickname?">
+	<input type="text" class="nickname" id="nicknameBox" placeholder="What is your nickname?">
 	<ul id="messages"></ul>
 	<form>
 		<input class="message" type="text" id="m" autocomplete="off">
-		<button>send</button>
+		<button id="sendButton">send</button>
 	</form>
 <script src="/socket.io/socket.io.js"></script>
-<script src="js/main.js"></script>
+<script src="../public/js/main.js"></script>
 </body>
 </html>
