@@ -1,6 +1,6 @@
 
 const express = require('express'); //just like an include or reqire with ...
-const app = express(); //create an instance of our application via simpleExample
+const app = express();
 const io = require('socket.io')();
 
 

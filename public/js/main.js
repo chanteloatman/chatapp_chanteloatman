@@ -30,7 +30,7 @@
 
     function appendMessage(msg){
       //debugger;
-      let newMsg = `<li>${msg.message}</li>`;
+      let newMsg = `<li>${msg.message}</li>`; //list the messages
       messageList.innerHTML += newMsg;
     }
 

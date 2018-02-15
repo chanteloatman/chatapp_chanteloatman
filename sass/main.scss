@@ -5,6 +5,8 @@
 
 body { font: 13px Helvetica, Arial; background-color:#c79cce;}
 
+h3{text-align: center; font-family: Arial; font-size: 18px; margin-bottom: 10px;}
+
 form {
 	/*background: #000;*/
 	padding: 3px;
@@ -12,20 +14,21 @@ form {
 	bottom: 0;
 	width: 100%;
 
-	input { border: double 4px #6c3c97; padding: 10px; width: 90%; margin-right: 0.5%; }
-  button {width: 9%; background-color: #6c3c97; padding: 14px;}
+	input { border: double 8px #6c3c97; padding: 10px; width: 90%; background-color: #fff;}
+  button {width: 9%; background-color: #6c3c97;}
 	/*button { width: 9%; background: rgb(130, 224,255); border: solid #6c3c97; padding: 10px; }*/
 }
-
+/*Message Styling*/
 #messages {
 	list-style-type: none; margin: 0; padding: 0;
-
-	li { padding: 5px 10px;	color: #92b6c2;}
-	li:nth-child(odd) { background: #eee; color: #efd86c;}
+  /*users message styling (even)*/
+	li{ padding: 6px 12px 6px 12px; background-color: #92b6c2; color: #304a7b; border-radius: 10px; animation-duration: 2s; animation-name: slidein; margin-right: 50%; font-family: Arial;}
+	/*other person's message styling (odd)*/
+	li:nth-child(odd){ padding:6px 12px 6px 12px; background-color: #efd86c; color: #ae7920; border-radius: 10px; animation-duration: 2s; animation-name: slidein; clear: both; margin-left: 50%; font-family: Arial;}
 }
-#mainTitle{color: #fff; text-align:center; margin-top: 25px; font-family: 'Spicy Rice', cursive; font-size: 30px;}
-#sendButton{background: #6c3c97;color:#dcd7cc;border: solid 6px #6c3c97;font-family: 'Spicy Rice', cursive;}
-#nicknameBox{border: solid 3px #6c3c97; padding: 8px 15px 8px 15px; margin: 0 auto; font-family: 'Arial', bold;}
-#m{border: solid 6px #6c3c97;}
+#mainTitle{color: #6c3c97; text-align:center; margin-top: 25px; font-family: 'Sigmar One', Arial; font-size: 30px; font-weight: bolder;} /*font-family: 'Spicy Rice', cursive;*/
+#sendButton{background-color: #6c3c97; color:#edddef; border: solid 8px #6c3c97; font-family: 'Sigmar One', Arial; cursive; font-size: 20px; padding: 12px 0px 10px 0px;}
+#nicknameBox{border: solid 3px #6c3c97; padding: 8px 15px 8px 15px; text-align: center; width: 100%; font-family: 'Arial', bold; color: #6c3c97; background: #edddef}
+#m{border: solid 8px #6c3c97; padding: 21px 8px 16px 8px; color: #6c3c97; font-family: Arial; font-size: 15px; background: #edddef;}
 
 .hidden{display: none;}
